@@ -4,15 +4,13 @@
 
 This project investigates the **connective constant of the square lattice** by estimating the exponential growth rate of self-avoiding walks (SAWs) using various deterministic and Monte Carlo methods.
 
-A self-avoiding walk is a path on a lattice that never revisits a previously visited site. The number of self-avoiding walks of length \(L\), denoted by \(C_L\), grows approximately exponentially:
+A self-avoiding walk is a path on a lattice that never revisits a previously visited site. The number of self-avoiding walks of length $L$, denoted by $C_L$, grows approximately exponentially:
 
-\[
-C_L \approx \mu^L
-\]
+$C_L \approx \mu^L$
 
-where $\mu$ is the connective constant. In simple terms, \mu is the average number of directions a SAW of any length can take.
+where $\mu$ is the connective constant. In simple terms, $\mu$ is the average number of directions a SAW of any length can take.
 
-The objective of this project is to explore different computational approaches to estimating \(\mu\), examine their accuracy and computational limitations, and investigate how the estimates behave as walk length increases.
+The objective of this project is to explore different computational approaches to estimating $\mu$, examine their accuracy and computational limitations, and investigate how the estimates behave as walk length increases.
 
 ## Methods
 
@@ -44,9 +42,9 @@ Implemented the Rosenbluth method to estimate the number of SAWs through sequent
 - Constructed walks by randomly selecting among available non-intersecting directions.
 - Assigned each walk a Rosenbluth weight based on the number of available directions at each step.
 - Assigned zero weight to walks that became trapped before reaching the target length.
-- Estimated \(C_L\) using the average importance weight.
+- Estimated $C_L$ using the average importance weight.
 
-Compared estimated SAW counts against exact values for smaller walk lengths and examined the resulting estimates of \(\mu\).
+Compared estimated SAW counts against exact values for smaller walk lengths and examined the resulting estimates of $\mu$.
 
 ### 4. Concatenation Method
 
@@ -57,7 +55,7 @@ Implemented a method to estimate the number of longer SAWs by concatenating inde
 - Checked whether the resulting concatenated walk remained self-avoiding.
 - Estimated the probability of successful concatenation and used it to estimate the number of SAWs of twice the original length.
 
-Repeated the process recursively to estimate \(C_L\) for increasingly large walk lengths.
+Repeated the process recursively to estimate $C_L$ for increasingly large walk lengths.
 
 ### 5. Population Growth Method
 
@@ -87,7 +85,7 @@ The different methods demonstrate the trade-offs between computational efficienc
 
 **Rosenbluth Method**
 
-| Walk length \(L\) | Actual \(C_L\) | Estimated \(C_L\) |
+| Walk length $L$ | Actual $C_L$ | Estimated $C_L$ |
 |---:|---:|---:|
 | 5 | 284 | 284 |
 | 10 | 44,100 | 44,086 |
@@ -95,7 +93,7 @@ The different methods demonstrate the trade-offs between computational efficienc
 
 **Concatenation Method**
 
-| Walk length \(L\) | Estimated \(C_L\) |
+| Walk length $L$ | Estimated $C_L$ |
 |---:|---:|
 | 20 | \(8.98 \times 10^8\) |
 | 40 | \(3.18 \times 10^{17}\) |
@@ -106,7 +104,7 @@ The different methods demonstrate the trade-offs between computational efficienc
 
 **Population Growth Method**
 
-The population growth method tracked estimates of the connective constant from walk length \(L=15\) to \(L=715\).
+The population growth method tracked estimates of the connective constant from walk length $L$=15 to $L$=715.
 
 The running-average estimates gradually became more stable as walk length increased, while window-smoothed estimates exhibited more noticeable fluctuations.
 
