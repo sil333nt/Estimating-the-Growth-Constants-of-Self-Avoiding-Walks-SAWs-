@@ -10,7 +10,7 @@ A self-avoiding walk is a path on a lattice that never revisits a previously vis
 C_L \approx \mu^L
 \]
 
-where \(\mu\) is the connective constant. In simple terms, \mu is the average number of directions a SAW of any length can take.
+where $\mu$ is the connective constant. In simple terms, \mu is the average number of directions a SAW of any length can take.
 
 The objective of this project is to explore different computational approaches to estimating \(\mu\), examine their accuracy and computational limitations, and investigate how the estimates behave as walk length increases.
 
