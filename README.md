@@ -2,6 +2,8 @@
 
 ## Overview
 
+This project is part of a NUS course -- ST3247 Simulation
+
 This project investigates the **connective constant of the square lattice** by estimating the exponential growth rate of self-avoiding walks (SAWs) using various deterministic and Monte Carlo methods.
 
 A self-avoiding walk is a path on a lattice that never revisits a previously visited site. The number of self-avoiding walks of length $L$, denoted by $C_L$, grows approximately exponentially:
