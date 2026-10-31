@@ -95,16 +95,16 @@ The different methods demonstrate the trade-offs between computational efficienc
 
 | Walk length $L$ | Estimated $C_L$ |
 |---:|---:|
-| 20 | \(8.98 \times 10^8\) |
-| 40 | \(3.18 \times 10^{17}\) |
-| 80 | \(3.13 \times 10^{34}\) |
-| 160 | \(2.33 \times 10^{68}\) |
-| 320 | \(1.06 \times 10^{136}\) |
-| 640 | \(1.74 \times 10^{271}\) |
+| 20 | $8.98 \times 10^8$ |
+| 40 | $3.18 \times 10^{17}$ |
+| 80 | $3.13 \times 10^{34}$ |
+| 160 | $2.33 \times 10^{68}$ |
+| 320 | $1.06 \times 10^{136}$ |
+| 640 | $1.74 \times 10^{271}$ |
 
 **Population Growth Method**
 
-The population growth method tracked estimates of the connective constant from walk length $L$=15 to $L$=715.
+The population growth method tracked estimates of the connective constant from walk length $L=15$ to $L=715$.
 
 The running-average estimates gradually became more stable as walk length increased, while window-smoothed estimates exhibited more noticeable fluctuations.
 
